@@ -84,8 +84,116 @@ print("banana" in x)  # True, because a sequence with the value "banana" is in t
 print("pineapple" not in x)  # True, because a sequence with the value "pineapple" is NOT in the list
 
 """
+"""
+in python we use match instead of switch and use case as it is
+
+match x:
+    case 1:
+        print("x is 1")
+    case 2:
+        print("x is 2")
+    case _:
+        print("x is something else")
+
+
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5:
+    print("Today is a weekday")
+  case 6 | 7:
+    print("I love weekends!")
+
+month = 5
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5 if month == 4:
+    print("A weekday in April")
+  case 1 | 2 | 3 | 4 | 5 if month == 5:
+    print("A weekday in May")
+  case _:
+    print("No match")
+
+"""
+
+#LOOPS 
+"""
+in python we have ony two types of loop while and for loop
+while loop
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+
+  With the break statement we can stop the loop even if the while condition is true
+
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1  
+
+
+  With the continue statement we can stop the current iteration, and continue with the next
+
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+"""
+"""
+for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+
+
+"""
 
 
 
+#Functions
+"""
+def my_function():
+    print("Hello from a function")
+
+my_function()
+
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
 
 
+
+You can combine the two argument types in the same function.
+
+Any argument before the / , are positional-only, and any argument after the *, are keyword-only.
+
+def my_function(a, b, /, *, c, d):
+  print(a + b + c + d)
+
+my_function(5, 6, c = 7, d = 8)
+"""
+
+#Lambda Functions
+"""
+lambda arguments : expression
+
+x = lambda a : a + 10
+print(x(5))
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
+
+#here n = 2 and a=11
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+
+print(mydoubler(11))
+
+"""
