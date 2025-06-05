@@ -1,0 +1,29 @@
+Variables in python
+basic data types in python
+operaters in python
+
+conditional statements
+loops
+
+Inbuilt data types 
+  -list
+  -tupls
+  -sets
+  -Dictionaries
+
+Functions
+  -lambda
+  -map
+  -filter
+
+  section 6 and 7 are practice questions
+
+Modules and Packages
+
+File handaling
+
+Exception handaling
+
+OOPS concepts with classes and objects
+
+Advanced python
